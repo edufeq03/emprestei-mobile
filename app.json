@@ -1,29 +1,35 @@
 {
-  "expo": {
-    "name": "my-app",
-    "slug": "my-app",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+  "cli": {
+    "version": ">= 3.12.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
     },
-    "ios": {
-      "supportsTablet": true
+    "preview": {
+      "distribution": "internal",
+      "buildType": "apk"
     },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "production": {}
+  },
+  "submit": {
+    "production": {}
+  },
+  "extra": {
+    "eas": {
+      "projectId": "8f23ab95-ac39-439c-89a0-9c99b8da3703"
     }
+  },
+  "expo": {
+    "android": {
+      "package": "com.edufeq03.emprestei"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "8f23ab95-ac39-439c-89a0-9c99b8da3703"
+      }
+    },
+    "owner": "edufeq03"
   }
 }
